@@ -1,0 +1,479 @@
+/* header*/
+header{
+    
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)) ,url(../images/bannerback.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    
+}
+h1{
+    font-family: 'Montserrat',sans-serif;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    color: white;
+   
+
+
+}
+.banner-heading{
+    animation: bannerAnim 2s;
+    
+}
+.banner-para{
+    animation: bannerAnim 2s 1s backwards ;
+}
+
+.banner-heading-span1{
+    color: gray;
+}
+
+@keyframes bannerAnim{
+    0%{opacity: 0; transform: translateX(-100px)}
+    100%{opacity: 1; transform: translateX(0)}
+}
+
+.nav-menu{
+    background: linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2));
+    
+    transition: all .7s; 
+     
+}
+.menu-item{
+    color: white;
+    font-size: 16;
+    letter-spacing: 1px;
+    transition: transform .5s;
+    justify-content: space-between;
+}
+
+.menu-item:hover{
+    color: gray;
+    transform: translateY(-2px);
+    text-shadow: black;
+    /*transform: scale(1.1);*/
+    
+}
+
+.line1, .line2, .line3{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    transition: all .4s; 
+
+}   
+
+   
+ .change .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+ }
+ .change .line2{
+    opacity: 0;
+} 
+ .change .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.custom-navbar{
+    padding: 5px 30px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+
+.nav-active{
+    color: gray;
+}
+
+/* Mission */
+
+.mission{
+    background:  linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ),lightblue;
+}
+
+.mission-heading{
+
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 50px;
+    
+}
+
+.underline{
+    
+    width: 130px;
+    border: 3px solid white;
+    margin: auto;
+   
+}
+.m-para{
+    color: black;
+}
+
+.m2-heading{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+}
+
+.m2-para{
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.thumb{
+    color: maroon;
+}
+.handshake{
+    color: red;
+}
+
+.fromleft{
+
+    animation: missionImgAnim 2s ;
+    
+
+}
+
+.fromright{
+    animation: missionTextsAnim 2s ;
+
+}
+
+@keyframes missionImgAnim{
+    0%{
+        opacity: 0;
+        transform: translateX(-120px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes missionTextsAnim{
+    0%{
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+/* end mission*/
+
+/*start collection */
+
+.collection-heading{
+
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 50px;
+    
+}
+.c-para{
+    color: black;
+}
+
+.card-shadow{
+    box-shadow: 5px 8px 20px #444;
+}
+.card-heading{
+    position: absolute;
+    top: 70%;
+    right: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background:#222;
+    cursor: pointer;
+    widows: 70%;
+    opacity: .7;
+    transition: all .5s;
+}
+.card-heading:hover{
+    opacity: 1;
+}
+
+/*end collection */
+
+/*start gallery*/
+
+/* .underline-dark{
+
+    width: 130px;
+    border: 3px solid gray;
+    margin: auto;
+   
+
+} */
+
+.gallery-list-item{
+    cursor: pointer;
+    transition: all .5s;
+}
+.active-item{
+    color: black;
+}
+
+/* .gallery-list-item:hover{
+    color: black;
+}
+*/
+/* end gallery */
+
+/* start customer */
+
+.customer{
+    background: dimgray;
+}
+
+.customer-heading{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 50px;
+    
+}
+
+.customer-para{
+
+    color: black;
+}
+
+/*end customer */
+
+/* start pricing */
+.pricing-heading{
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 50px;
+
+}
+.pricing-para{
+
+color: black;    
+
+}
+
+.underline-dark{
+    width: 130px;
+    border: 3px solid black;
+    margin: auto;   
+}
+
+
+.card1, .card2, .card3{
+
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url(../images/card.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow: 2px 5px 20px black;
+    max-width: 400px;
+    }
+
+.pricing-heading4{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px ;
+    text-transform: uppercase;
+}
+
+.card-list{
+    font-size: 20px;
+    border-bottom: 2px groove white;
+    width: 55%;
+   
+    text-transform: uppercase;
+    margin: auto;
+}
+
+/*
+.pricing-btn{
+    background: red;
+   border-radius: 30%;
+}
+*/
+
+.cardfromleft{
+ animation: cardLeftAnim 2s ;
+}
+.cardfromRight{
+    animation: cardRightAnim 2s ;
+ }
+.cardfromBottom{
+    animation: cardBottomAnim 2s ;
+ }   
+
+
+@keyframes cardLeftAnim{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes cardRightAnim{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes cardBottomAnim{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* end pricing */
+
+.contact{
+    background: linear-gradient(105deg,rgba(0,0,0,.5)0%, rgba(0,0,0,.4) 50% , transparent 50%) ,url(../images/contact.png) no-repeat center;
+    background-size: cover;
+}
+
+ /* .inp-inside{
+    background: transparent;
+    border-color: transparent;
+    border-radius: 0;
+    border-bottom: 2px solid blue;
+    transition: all .8s
+
+} 
+*/
+
+/* .inp-inside:focus{
+    background: transparent;
+    border-color: transparent;
+    box-shadow: 0;
+    color: white;
+    border-bottom: 2px solid red;
+
+
+} */
+
+.contact-btn{
+    width: 150px;
+    background: maroon;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px white;
+    transition:all 1s;
+}
+
+.contact-btn:hover{
+    background: orangered;
+    transform: translateY(-1px);
+}
+
+.contact-form{
+    max-width: 500px;
+}
+
+.label{
+    color:white;
+    display: block;
+    margin-top: -70px;
+    margin-left: 4px;
+    font-size: 13px;
+}
+
+.inp-inside:placeholder-shown + .label{
+    transform: translate(20px,20px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media(max-width:992px){
+    .contact{
+        background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8));
+    }
+}
+
+@media(max-width:650px){
+
+    .contact-form{
+        width: 70%;
+        margin:auto;
+    }
+
+    .contact-heading{
+        text-align: center;
+    }
+
+ 
+}
+
+/* end contact */
+
+/* start footer */
+
+.footer-link{
+    color: white;
+    font-size: 13px;
+    transition: all .3s;
+}
+
+.footer-link:hover{
+    color: teal;
+    text-decoration: none;
+}
+
+.text-email:hover{
+    text-decoration: none;
+}
+
+@media(max-width:1300px){
+    .text-email{
+        font-size: 12px;
+    }
+}
+@media(max-width:992px){
+    .text-email{
+        font-size: 16px;
+    }
+}
